@@ -1,11 +1,15 @@
+function inject_css(selectors){
+  var styleSheet = document.styleSheets[0];
+  var index = styleSheet.cssRules ? styleSheet.cssRules.length : 0;
+  styleSheet.insertRule(selectors + ' { display: none; }', index);
+}
+
 function hide_elements(selectors) {
-  console.log(selectors);
-  for (var i = 0; i < selectors.length; i++) {
-    var elements = document.querySelectorAll(selectors[i])
-    for (var j = 0; j < elements.length; j++){
-      elements[j].style.visibility = "hidden";
-    }
+  var elements = document.querySelectorAll(selectors)
+  for (var j = 0; j < elements.length; j++){
+    elements[j].style.display = "none";
   }
 }
 
-array_config("selectors", hide_elements);
+//config("selectors", hide_elements);
+config("selectors", inject_css);
