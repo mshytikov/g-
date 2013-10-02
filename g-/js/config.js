@@ -1,5 +1,5 @@
 DEFAULT_CONFIG = {
-  'selectors' : "#sb-button-notify, #gbg1, li.gbtn"
+  'selectors' : "div.gb_sa.gb_c, div.gb_ka, #sb-button-notify"
 };
 
 function config(key, callback){
