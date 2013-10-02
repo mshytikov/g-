@@ -1,6 +1,6 @@
 {
   "name": "g-",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "manifest_version": 2,
   "description": "Disable the Google Plus red notification number on Gmail, Google search, etc",
   "content_scripts" : [
